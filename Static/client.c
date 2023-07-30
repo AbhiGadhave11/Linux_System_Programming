@@ -10,3 +10,8 @@ int main()
 
     return 0;
 }
+
+// For running static file
+
+//gcc -static client.c -o Myexe sharedfile.a
+//./Myexe
