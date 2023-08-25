@@ -17,14 +17,14 @@ int main( )
 	int fd;
 
 	// By using this function we can truncate the file after file offset 10
-	ret = truncate("file.txt",10);
+	ret = truncate("Demo.txt",10);
 	if(ret == -1)
 	{
 		printf("Unable to truncate file\n");
 	}
 
 	// For the truncaion purpose file must be opened in write mode
-	fd = open("new.txt",O_RDWR);
+	fd = open("Demo.txt",O_RDWR);
 	if(fd == -1)
 	{
 		printf("Unable to open file\n");

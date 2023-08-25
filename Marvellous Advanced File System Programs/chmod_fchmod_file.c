@@ -17,7 +17,7 @@ int main( )
 	// In this example we are changing permissions of file first.txt 
 	// as read,write,execute for the user.
 
-	ret = chmod("file.txt",S_IRWXU);
+	ret = chmod("Demo.txt",S_IRWXU);
 
 	if(ret == -1)
 	{
@@ -46,7 +46,7 @@ int main( )
 	// IF file is already opened then we can use the function fchmod as it does same activity.
 	// This function accept first parameter as a file descriptor and second parameter as a 		permissions to be set.
 
-	fd = open("file.txt",O_RDONLY);
+	fd = open("Demo.txt",O_RDONLY);
 	if(fd == -1)
 	{
 		printf("Unable to open file\n");
